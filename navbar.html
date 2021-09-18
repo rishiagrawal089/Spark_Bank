@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css" >
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-title">Sparks Bank</div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+              <div class="navbar-collapse">
+                  <ul>
+                     <li><a  href="home.php">Home</a></li>
+                     <li><a href="user.php">Create User</a></li>
+                     <li><a href="transfer.php">View User</a></li>
+                     <li><a href="history.php">Transaction History</a></li>
+                   </ul>
+              </div>
+        </nav>
+        <script>
+          const toggleButton = document.getElementsByClassName('toggle-button')[0]
+          const navbarLinks = document.getElementsByClassName('navbar-collapse')[0]
+        
+         toggleButton.addEventListener('click',() => {
+          navbarLinks.classList.toggle('active')
+                }) 
+        </script>
+    </body>
+</html>

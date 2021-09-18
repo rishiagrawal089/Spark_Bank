@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    justify-content: center;
+}
+.toggle-button{
+    position: absolute;
+    top: 1.3rem;
+    right: 1.2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    align-items: center;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.content{
+    overflow: hidden;
+    height:350px;
+    width: 100%;
+    position: relative;
+    box-shadow: 3px 3px 6px black;
+}
+.content img {
+    height: 50vh;
+    width:100%;
+}
+.image img{
+    width:13s00;
+    height:400;
+    display: flex;
+}
+.btn-slider{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+.btn-slider span{
+    height: 15px;
+    width:50px;
+    border: 2px solid black;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.icons-holder{
+    display: flex;
+    justify-content: space-around;
+}
+.icons-holder .icon-button-holder{
+    text-align: center;
+}
+.icons-holder img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+.icon-button-holder button{
+    background-color: #2785C4;
+    padding: 12px ;
+     font-size: 14px;
+    font-weight: 600;
+    border-radius: 3.5rem;
+    border: none;
+    box-shadow: 3px 3px 2px gray ;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+#head-message{
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 3px gray;
+    font-size: 3rem;
+    font-style: italic;
+    margin: 30px auto 60px auto;
+}
+footer{
+	color:whitesmoke;
+	background-color: black;
+	letter-spacing: 0.5px;
+    line-height: 1.6rem;
+}
+footer p{
+	margin: 0;
+    padding: 12px;
+    text-align: center;
+	font-size: 1.23rem;
+}
+@media(max-width: 600px){
+    .content{
+        height: 250px;
+    }
+    .icons-holder{
+        display: block;
+    }
+    #head-message{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .icon-button-holder button{
+        margin-bottom: 3rem;
+    }
+}

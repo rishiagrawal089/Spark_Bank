@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/518/886/small/dark_background15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-style: italic;
+    margin: 30px auto 40px auto; 
+}
+button,input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+.background {
+    width: 100%;
+    display: flex;
+  } 
+.container {
+    flex: 0 1 650px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 7rem;
+  } 
+.screen {
+    position: relative;
+    background: #d9d9d9;
+    border-radius: 20px;
+    box-shadow: 7px 10px 8px black;
+    }
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #7B8788;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }  
+  .screen-body {
+    display: flex;
+  }
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  .app-form-group.button {
+    margin-bottom: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    right:40px;
+  }
+  .app-form-control{
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #4C4B4B;
+    color: #4C4B4B;
+    font-size: 14px;
+    transition: border-color .2s;
+  }
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  .app-form-control:focus {
+      outline: none;
+    border-bottom-color: #4C4B4B;
+  }
+  .app-form-button {
+    background: none;
+    outline: none;
+    background-color: rgb(124, 121, 121);
+    margin: 0px 20px;
+    color: black; 
+    font-size: 14px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  .app-form-button:hover {
+    color: white;
+    box-shadow: 2px 2px black;
+  }
+  footer{
+	color: whitesmoke;
+	background-color:black;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+	letter-spacing: 0.5px;
+    line-height: 1.6rem;
+}
+footer p{
+	margin: 0;
+    padding: 12px;
+    text-align: center;
+	font-size: 1.23rem;
+}
+  @media screen and (max-width: 520px) {
+    *{
+      letter-spacing:1px;
+    }
+    .container{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 3rem;
+
+    }
+    .screen-body {
+      flex-direction: column;
+    }
+    .screen-body-item.left {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .app-form-button{
+      margin-top: 2rem;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+    .container{
+        margin-bottom: 4rem;
+    }
+    .screen-body-item {
+      padding: 0;
+    }
+  }
